@@ -35,8 +35,7 @@ nav {
     padding-right: 100px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    margin: -1;
-    margin-left: 6000px;
+    margin: 1px 1px 1px 6000px;
 }
 
 nav a {
@@ -115,7 +114,8 @@ nav a:hover::after {
 /* Container for the project boxes */
 .project-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 20px;
     width: 100%;
     max-width: 1200px;
@@ -128,12 +128,13 @@ nav a:hover::after {
     flex-direction: column;
     align-items: center;
     background-color: #fdfdfd;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-    width: calc(50% - 10px);
+    width: calc(70% - 10px);
+    margin-left: 275px;
 }
 
 /* Hover effect for the project box */
@@ -144,7 +145,12 @@ nav a:hover::after {
 
 .project img {
     width: 150px;
+    margin-right: 0;
     margin-bottom: 15px;
+}
+
+.project-text {
+    text-align: center;
 }
 
 .project h3 {
@@ -154,9 +160,9 @@ nav a:hover::after {
 }
 
 .project p {
-    font-size: 15px;
+    font-size: 1.0em;
     color: #3e1f47;
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0 auto 20px;
 }
 
@@ -277,7 +283,7 @@ nav a:hover::after {
     display: flex;
     justify-content: center;
     gap: 90px;
-    width: 80%;
+    width: 100%;
     max-width: 10000px;
 }
 
@@ -354,8 +360,8 @@ footer {
 
     .project-container {
         flex-direction: column;
-        gap: 10px;
-        padding: 0 10px;
+        /*gap: 10px;*/
+
         box-sizing: border-box;
     }
 
@@ -446,7 +452,7 @@ footer {
 
     .project-container {
         flex-direction: row;
-        gap: 250px !important; /* Increased gap between projects */
+        /*gap: 200px; Increased gap between projects */
     }
 
     .project {
@@ -455,6 +461,15 @@ footer {
 
     .project img {
         width: 200px;
+    }
+
+    .contact-container{
+        gap: 60px;
+        width: 95%;
+    }
+
+    .contact-item {
+        width: auto;
     }
 
     nav a {
